@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="iniciar sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="501dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/custom_login_button"
+        android:textAllCaps="true"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordar"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Boleta"
+        android:drawableLeft="@drawable/usuario"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:background="@drawable/custom_text"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/bloquear"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="404dp"
+        android:background="@drawable/custom_text"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:autoLink="all"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olvide mi contraseña"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="465dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="78dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:layout_editor_absoluteY="588dp" />
+
+</android.support.constraint.ConstraintLayout>
